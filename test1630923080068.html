@@ -1,15 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="">
-
+  <script>window.gameJson =JSON.stringify({"last_node_id":0,"last_link_id":0,"nodes":[],"links":[],"groups":[],"config":{},"extra":{},"version":0.4})</script>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>
     game
   </title>
+  <link rel="stylesheet" type="text/css" href="lib/litegraph.css">
+  <link rel="stylesheet" type="text/css" href="lib/app.css">
+  <script type="text/javascript" src="lib/litegraph.js"></script>
+  <script type="text/javascript" src="lib/app.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,8 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
   </noscript>
-  <h1>hello world</h1>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
 </body>
 
 </html>
