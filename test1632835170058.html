@@ -1,0 +1,74 @@
+<!DOCTYPE html><script>window.gameJson =JSON.stringify({"last_node_id":0,"last_link_id":0,"nodes":[],"links":[],"groups":[],"config":{},"extra":{},"version":0.4})</script><!DOCTYPE>
+<html>
+<head>
+  <title>Server error</title>
+  <style>
+    body, html {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      background-color: #e4e4e4;
+    }
+    .header {
+      font-family: Helvetica,Arial;
+      font-size: 20px;
+      line-height: 25px;
+      background-color: rgba(204, 49, 0, 0.94);
+      color: #F8F8F8;
+      overflow: hidden;
+      padding: 10px 10px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+    .footer {
+      padding-left:20px;
+      height:20px;
+      font-family:Helvetica,Arial;
+      font-size:12px;
+      color:#5E5E5E;
+      margin-top: 10px;
+    }
+    .content {
+      font-family:Helvetica,Arial;
+      font-size:18px;
+    }
+    .info {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .info-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    pre {
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header" style="">Server error!</div>
+  <div class="content">
+    <div class="info">
+      <div class="info-title">Message</div>
+      <div>Unable to load asset: assets/tpl2.txt</div>
+    </div>
+        <div class="info">
+    <div class="info-title">Stack</div>
+      <pre>package:flutter/src/services/asset_bundle.dart 224:7          PlatformAssetBundle.load
+package:jaguar_flutter_asset/jaguar_flutter_asset.dart 25:19  serveFlutterAssets.<fn>
+package:jaguar/http/context/context.dart 581:32               Context.execute
+package:jaguar/serve/server.dart 163:9                        Jaguar._handler
+</pre>
+    </div>
+    
+    <div class="info">
+      <div class="info-title">Request</div>
+      <div>Resource: /tpl2.txt</div>
+      <div>Method: GET</div>
+    </div>
+  </div>
+  <div class="footer">Jaguar Server - 2016 - <a href="https://github.com/jaguar-dart">https://github.com/jaguar-dart</a></div>
+</body>
+</html>
